@@ -11,19 +11,6 @@ function happyNewYear() {
   console.log("Happy New Year!");
 }
 
-/*
-  Write a method `reverse_string` that takes one argument, a string, and reverses
-  it. Don't use the built-in `.reverse` method. Instead, loop through the
-  characters in the input string and reverse it.
-*/
-function reverseString(str) {
-  let reversedStr = "";
-  for (let i = 0; i < str.length; i++) {
-    reversedStr = str[i] + reversedStr;
-  }
-  return reversedStr;
-}
-
 /* 
   Write a method `fizzbuzz_printer` that prints the numbers from 1 to 100. For
   multiples of three, print "Fizz" instead of the number and for the multiples
@@ -46,4 +33,17 @@ function fizzbuzz(num) {
   } else {
     return num;
   }
+}
+
+/*
+  Write a method `reverse_string` that takes one argument, a string, and reverses
+  it. Don't use the built-in `.reverse` method. Instead, loop through the
+  characters in the input string and reverse it.
+*/
+function reverseString(str) {
+  let reversedStr = "";
+  for (let i = 0; i < str.length; i++) {
+    reversedStr = str[i] + reversedStr;
+  }
+  return reversedStr;
 }

@@ -77,8 +77,8 @@ with `end`, and will run the code inside that block in a loop. You can
 optionally provide a **block parameter**, which in the example above, is
 represented by the `i` variable within the pipes: `|i|`.
 
-Between the `do` and the `end`, you can define the code that you want to run in
-the loop.
+Between the `do` and the `end`, you write whatever code you want to run in the
+loop.
 
 Each time Ruby runs the loop, it will assign a new value for the block parameter
 `i`, which will start at 0 and end at 9 (since we're running this loop 10
@@ -151,50 +151,50 @@ the solution for each of these deliverables in the `js/index.js` file you can
 look at (but if you want an extra challenge, try solving them in Ruby without
 looking at the JavaScript solution).
 
-1. Write a method `happy_new_year` using a `while` or `until` loop that outputs
-   numbers starting at 10 and counting down to 1. After reaching 1, print out
-   "Happy New Year!"
+Write a method `happy_new_year` using a `while` or `until` loop that outputs
+numbers starting at 10 and counting down to 1. After reaching 1, print out
+"Happy New Year!"
 
-   ```rb
-   happy_new_year
-   # => 10
-   # => 9
-   # => 8
-   # => ...
-   # => 1
-   # => Happy New Year!
-   ```
+```rb
+happy_new_year
+# => 10
+# => 9
+# => 8
+# => ...
+# => 1
+# => Happy New Year!
+```
 
-2. Write a method `reverse_string` that takes one argument, a string, and reverses
-   it. Don't use the built-in `.reverse` method. Instead, loop through the
-   characters in the input string and reverse it.
+Write a method `reverse_string` that takes one argument, a string, and reverses
+it. Don't use the built-in `.reverse` method. Instead, loop through the
+characters in the input string and reverse it.
 
-   ```rb
-   reverse_string("hello")
-   # => "olleh"
-   ```
+```rb
+reverse_string("hello")
+# => "olleh"
+```
 
-3. Write a method `fizzbuzz` that prints the numbers from 1 to 100. For
-   multiples of three, print "Fizz" instead of the number and for the multiples
-   of five print "Buzz". For numbers which are multiples of both three and five,
-   print "FizzBuzz".
+Write a method `fizzbuzz` that prints the numbers from 1 to 100. For
+multiples of three, print "Fizz" instead of the number and for the multiples
+of five print "Buzz". For numbers which are multiples of both three and five,
+print "FizzBuzz".
 
-   ```rb
-   fizzbuzz
-   # 1
-   # 2
-   # Fizz
-   # 4
-   # Buzz
-   # Fizz
-   # 7
-   # ...
-   # 14
-   # FizzBuzz
-   # 16
-   # ...
-   # 100
-   ```
+```rb
+fizzbuzz
+# 1
+# 2
+# Fizz
+# 4
+# Buzz
+# Fizz
+# 7
+# ...
+# 14
+# FizzBuzz
+# 16
+# ...
+# 100
+```
 
 ## Resources
 

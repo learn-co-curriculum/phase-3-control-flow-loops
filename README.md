@@ -2,8 +2,8 @@
 
 ## Learning Goals
 
-- Write basic loops with the `whie` construct
-- Use the `times` method to run a block of code a specified number of times
+- Write basic loops with the `while` construct
+- Use the `#times` method to run a block of code a specified number of times
 
 ## Introduction
 
@@ -46,7 +46,7 @@ until counter == 10
 end
 ```
 
-## Looping with `times`
+## Looping with `#times`
 
 JavaScript has a `for` loop, which is commonly used to run some condition a set
 number of times:
@@ -60,7 +60,7 @@ for (let i = 0; i < 10; i++) {
 
 While Ruby does also have a `for` loop, you will see them used less often by
 Rubyists, since Ruby has a few other more expressive ways to run code in a loop.
-One such approach is to use the `times` loop:
+One such approach is to use the `#times` loop:
 
 ```rb
 10.times do |i|
@@ -71,7 +71,7 @@ end
 
 The syntax here is quite different from JavaScript, so let's break it down.
 
-`times` is a [method in the Integer class][times method] that can be called on a
+`#times` is a [method in the Integer class][times method] that can be called on a
 number. It takes a block of code as an argument, starting with `do` and ending
 with `end`, and will run the code inside that block in a loop. You can
 optionally provide a **block parameter**, which in the example above, is
@@ -114,11 +114,11 @@ including writing loops, so make sure to familiarize yourself with this syntax!
 
 [times method]: https://ruby-doc.org/core-2.7.3/Integer.html#method-i-times
 
-## Looping with `each`
+## Looping with `#each`
 
-The last looping construct we'll discuss in Ruby is the `each` method. The
-`each` method can be used with a few different data types, including arrays and
-objects (as we'll see later), but one common use case for the `each` method is
+The last looping construct we'll discuss in Ruby is the `#each` method. The
+`#each` method can be used with a few different data types, including arrays and
+objects (as we'll see later), but one common use case for the `#each` method is
 to use it with a [Range][ruby range]:
 
 ```rb
@@ -137,7 +137,7 @@ for (let i = 1; i <= 20; i++) {
 }
 ```
 
-You can see how methods like `each` help us write cleaner code that more clearly
+You can see how methods like `#each` help us write cleaner code that more clearly
 expresses our intent.
 
 [ruby range]: https://www.rubyguides.com/2016/06/ruby-ranges-how-do-they-work/
@@ -151,7 +151,7 @@ the solution for each of these deliverables in the `js/index.js` file you can
 look at (but if you want an extra challenge, try solving them in Ruby without
 looking at the JavaScript solution).
 
-Write a method `happy_new_year` using a `while` or `until` loop that outputs
+Write a method `#happy_new_year` using a `while` or `until` loop that outputs
 numbers starting at 10 and counting down to 1. After reaching 1, print out
 "Happy New Year!"
 
@@ -165,7 +165,7 @@ happy_new_year
 # => Happy New Year!
 ```
 
-Write a method `reverse_string` that takes one argument, a string, and reverses
+Write a method `#reverse_string` that takes one argument, a string, and reverses
 it. Don't use the built-in `.reverse` method. Instead, loop through the
 characters in the input string and reverse it.
 
@@ -174,7 +174,7 @@ reverse_string("hello")
 # => "olleh"
 ```
 
-Write a method `fizzbuzz` that prints the numbers from 1 to 100. For
+Write a method `#fizzbuzz` that prints the numbers from 1 to 100. For
 multiples of three, print "Fizz" instead of the number and for the multiples
 of five print "Buzz". For numbers which are multiples of both three and five,
 print "FizzBuzz".

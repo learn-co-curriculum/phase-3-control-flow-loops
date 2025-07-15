@@ -38,7 +38,7 @@ end
 
 def reverse_string(str)
   reversed_string = []
-  string_array = str.split(//).push()
+  string_array = str.split(//)
   string_array.each do |letter|
     reversed_string.unshift(letter)
   end
